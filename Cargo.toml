@@ -1,5 +1,5 @@
 [package]
-name = "bitdecode-rs"
+name = "bitdecode"
 version = "0.1.0"
 authors = ["TE-KazuhiroYabe <Kazuhiro.Yabe@sony.com>"]
 edition = "2018"
