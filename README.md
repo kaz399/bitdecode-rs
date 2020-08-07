@@ -1,10 +1,12 @@
 # bitdecode-rs
 
-A library for decoding bit patterns
+A small library for checking bit code matches
 
 ## Example
 
-```
+### Decoding bit code
+
+```rust
 use bitdecode::bitdecode::*;
 
 fn main() {
@@ -23,17 +25,17 @@ fn main() {
 ```
 
 The first argument is the bit code and the second argument is the format string.
-`parse_bit()` returns a hash map with a collection of bits at character positions 'a' and 'b':
+`parse_bit_u()` returns a hash map with a collection of bits at character positions 'a' and 'b':
 
-```
+```rust
 capture["a"] = 0b0011
 capture["b"] = 0b0011
 ```
 
-### About the format string
+#### Format string
 
 * Each hash key must be a single character
-* ' ' is treated as separators.
+* Space `' '` is treated as separator
 
 The following will be processed as the same format string:
 
